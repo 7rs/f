@@ -1,0 +1,26 @@
+[project]
+name = "f"
+version = "0.0.0"
+description = "Add your description here"
+authors = [
+    { name = "Cbrnex", email = "31788262+7rs@users.noreply.github.com" }
+]
+dependencies = [
+    "fonttools>=4.53.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/f"]
