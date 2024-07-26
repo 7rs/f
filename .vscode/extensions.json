@@ -1,0 +1,16 @@
+{
+	"recommendations": [
+		"editorconfig.editorconfig",
+		"ms-python.python",
+		"charliermarsh.ruff",
+		"biomejs.biome",
+		"davidanson.vscode-markdownlint",
+		"tamasfe.even-better-toml",
+		"ctcuff.font-preview",
+		"aaron-bond.better-comments",
+		"usernamehw.errorlens",
+		"wraith13.bracket-lens",
+		"eamodio.gitlens",
+		"oderwat.indent-rainbow"
+	]
+}

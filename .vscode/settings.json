@@ -1,0 +1,32 @@
+{
+	// * Ruff (https://docs.astral.sh/ruff)
+	// * Support: Formatting, Linting
+	// * Fast. Written by Rust.
+	// * Maybe Ruff hasn't a future, but I'm not gonna continue this project if Ruff isn't available.
+	"editor.defaultFormatter": "charliermarsh.ruff",
+
+	// * Biome (https://biomejs.dev/)
+	// * Support: Formatting, Linting
+	// * Fast. Written by Rust.
+	// * Biome supports JSON completely, no need Prettier.
+	// * https://biomejs.dev/internals/language-support
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+
+	// ? Maybe there's a better extension.
+	"[toml]": {
+		"editor.defaultFormatter": "tamasfe.even-better-toml"
+	},
+
+	// ! Don't use Prettier with markdown.
+	// ! Because prettier removes trailing spaces even if sets `files.trimTrailingWhitespace`.
+	// * markdownlint has a linting feature that prettier hasn't, and formatting is done according to rules.
+	"[markdown]": {
+		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+		"files.trimTrailingWhitespace": false
+	}
+}
