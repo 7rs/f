@@ -3,7 +3,11 @@ name = "f"
 version = "0.0.0"
 description = "Add your description here"
 authors = [{ name = "Cbrnex" }]
-dependencies = ["fonttools>=4.53.1", "ruff>=0.5.5"]
+dependencies = [
+    "fonttools>=4.53.1",
+    "ruff>=0.5.5",
+    "loguru>=0.7.2",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
@@ -16,7 +20,7 @@ managed = true
 dev-dependencies = []
 
 [tool.rye.scripts]
-main = { cmd = "python ./src/f/__init__.py" }
+main = { cmd = "python ./src/f/build.py" }
 
 [tool.hatch.metadata]
 allow-direct-references = true

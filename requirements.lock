@@ -10,7 +10,13 @@
 #   universal: false
 
 -e file:.
+colorama==0.4.6
+    # via loguru
 fonttools==4.53.1
+    # via f
+loguru==0.7.2
     # via f
 ruff==0.5.5
     # via f
+win32-setctime==1.1.0
+    # via loguru
