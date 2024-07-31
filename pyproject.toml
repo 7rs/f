@@ -1,6 +1,6 @@
 [project]
 name = "f"
-version = "0.0.0"
+version = "0.0.1"
 description = "Add your description here"
 authors = [{ name = "Cbrnex" }]
 dependencies = [
@@ -20,10 +20,13 @@ managed = true
 dev-dependencies = []
 
 [tool.rye.scripts]
-main = { cmd = "python ./src/f/build.py" }
+main = { cmd = "python -m f" }
 
 [tool.hatch.metadata]
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/f"]
+
+[tool.ruff]
+line-length = 120
